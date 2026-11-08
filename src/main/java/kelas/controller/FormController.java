@@ -68,7 +68,7 @@ public class FormController {
             String kategori = jenisBox.getValue();
             int kodeProduk = Integer.parseInt(kodeField.getText());
             int hargaProduk = Integer.parseInt(hargaField.getText());
-            p = new Produk (nama, kategori, kodeProduk, hargaProduk, gambarUri);
+            p = new Produk (nama, kategori, hargaProduk, kodeProduk, gambarUri);
             data.tambah(p);
 
         } catch (NumberFormatException e) {
